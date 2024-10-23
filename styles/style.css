@@ -1,10 +1,22 @@
 
+.header { 
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  /*height: 100vh; нам это нужно? */
+  justify-items: center;
+  align-items: center;
+  width: 100%; /* занимаем всю ширину родителя*/
+  background-color: lightgray;
+}
 
 
 
 
-
-
+.header__logo {
+  display: block;
+  height: 105px;
+  width: 148px;
+}
 
 
 
