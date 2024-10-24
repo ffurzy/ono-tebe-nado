@@ -13,7 +13,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 21.13px;
-  background-color: blanchedalmond;
 }
 
 
@@ -303,162 +302,131 @@
 
 /*Ниже раздел ОБ АУКЦИОНЕ*/
 
-.about {
+.about__column {
   display: grid;
-  background-color: aquamarine;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto 1fr;
-  align-items: center;
-  gap:20px;
-  padding: 20px;
-  margin: 0 auto;
   grid-template-areas: 
   "logo title"
-  "logo text";
-}
-
-.about__logo-column{
-  display: flex;
-  justify-content: center; /* Центрируем логотип горизонтально */
-  align-items: center; /* Центрируем логотип вертикально */
+  ". text"
+  ;
+  justify-items: center; /*нужно ли?*/
+  align-items: center; /*нужно ли?*/
+  padding-top: 35px;
+  padding-left: 11px;
+  
 }
 
 .about__logo {
-  display: flex;
-  width: 240px;
-  height: 240px;
   background-color: black;
   border-radius: 50%;
-  justify-content: center; /* Центрируем логотип горизонтально */
-  align-items: center; /* Центрируем логотип вертикально */
-  grid-area: logo;
-  
-}
-
-.about__column {
+  width: 240px;
+  height: 240px;
   display: flex;
-  flex-direction: column; /* Элементы располагаются вертикально */
-  justify-content: center; /* Выровняем содержимое по вертикали */
+  justify-content: center;
+  align-items: center;
 }
-
 
 .about__logo-image {
-  width: 80%; 
-  height: auto;
+  width: 62%;
+}
+
+.about__logo {
+  grid-area: logo;
+
 }
 
 .about__title {
-  
-  font-weight: 700;
-  margin: 0 0 20px 0; /* Отступ снизу */
-  text-transform: uppercase;
   grid-area: title;
+  justify-self: start;
 
   font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
-  line-height: 46.96px;
   text-align: left;
-
+  text-transform: uppercase;
+  padding: 10px 0px 0px 10px;
 
 }
 
 .about__text {
-  font-size: 18px;
-  line-height: 1.6;
   grid-area: text;
 
   font-family: Raleway;
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-
   
+  text-align: left;
+  padding: 10px 30px 180px 10px;
 }
 
 
+/*ВНИЗУ ФУТЕР*/
+.footer__menu {
+  padding: 0px 50px 88px 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.header {
+.footer__column {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  padding: 92px 24px;
-  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
-.header__menu {
-  display: flex;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__links-list {
-  gap: 32px;
-  display: flex;
-  margin-right: 17px;
-}
-
-.header__links-list-item {
-  list-style: circle;
-}
-
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
-
-.header__logo {
-  width: 148px;
-  height: 105px;
-}
-
-.header__adress {
-  margin-left: 195px;
-  margin-right: 25px;
+.footer__adress {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
   line-height: 24.3px;
-  font-style: normal;
+  text-align: left;
+  justify-self: flex-start;
+  padding-left: 50px;
 }
 
-*/
+.footer__menu {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  text-align: center;
+
+}
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-around;*/
+  /*padding: 0px 30px 0px 30px;*/
+  width: 100%;
+  gap: 48px;
+  padding-right: 50px;
+  justify-content: flex-end;
+}
+
+.footer__social-list-item {
+  width: 48px;
+  height: 48px;
+}
+
+
+
+
+.footer__menu-list-item, 
+.footer__social-list-item {
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
