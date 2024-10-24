@@ -32,6 +32,10 @@
   list-style: none;
 }
 
+.header__link_active {
+  text-decoration: underline;
+}
+
 .header__logo {
   display: block;
   width: 148px;
@@ -52,7 +56,7 @@
 /*Контент*/
 
 .cover {
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -175,6 +179,7 @@
 .lots {
   padding-right: 24px;
   padding-left: 24px;
+  padding-bottom: 200px;
 }
 
 .lots__heading {
@@ -188,21 +193,21 @@
 }
 
 .card_type_film {
-  background-image: url("/images/card-lot-01.jpg");
+  background-image: url("../images/card-lot-01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .card_type_book {
-  background-image: url("/images/card-lot-02.jpg");
+  background-image: url("../images/card-lot-02.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .card_type_picture {
-  background-image: url("/images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -276,9 +281,6 @@
   text-align: left;
   text-decoration: underline;
 }
-.lots {
-  padding-bottom: 200px;
-}
 
 /*Ниже раздел ОБ АУКЦИОНЕ*/
 
@@ -302,14 +304,11 @@
   height: 240px;
   border-radius: 50%;
   background-color: black;
+  grid-area: logo;
 }
 
 .about__logo-image {
   width: 62%;
-}
-
-.about__logo {
-  grid-area: logo;
 }
 
 .about__title {
@@ -336,9 +335,6 @@
 }
 
 /*ВНИЗУ ФУТЕР*/
-.footer__menu {
-  padding: 0px 50px 88px 50px;
-}
 
 .footer__column {
   display: grid;
@@ -362,7 +358,9 @@
   font-size: 18px;
   line-height: 21.13px;
   text-align: center;
+  padding: 0px 50px 88px 50px;
 }
+
 .footer__menu-link_active {
   text-decoration: none;
 }
