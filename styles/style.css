@@ -72,7 +72,7 @@
   color: #ffffff;
 }
 
-.line {
+.main__title {
   position: absolute;
   display: inline-block;
   font-family: "Raleway", serif;
@@ -83,17 +83,17 @@
   text-transform: uppercase;
 }
 
-.line__top {
+.aligned-text {
   top: 165px;
   left: 50px;
 }
 
-.line__middle {
+.aligned-text_center {
   top: 292px;
   left: 336px;
 }
 
-.line__bot {
+.aligned-text_right {
   top: 412px;
   left: 635px;
 }
