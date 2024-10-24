@@ -6,11 +6,35 @@
   justify-items: center;
   align-items: center;
   width: 100%; /* занимаем всю ширину родителя*/
-  background-color: lightgray;
+  padding: 94px 24px;
+  box-sizing: border-box; /*гарантирует, что padding входит в ширину, и шапка не будет шире, чем родительский контейнер.*/
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.13px;
+  background-color: blanchedalmond;
 }
 
 
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin-right: 5px;
 
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
 
 .header__logo {
   display: block;
@@ -18,12 +42,149 @@
   width: 148px;
 }
 
+.header__address {
+  display: grid;
+  margin-left: 125px;
+  font-style: normal;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  text-align: left;
+}
+
+
+
+/*Ниже идет вся поляна*/
+
+.cover {
+  background-image: url('/images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cover__title {
+  height: 757px;
+  gap: 0px;
+  opacity: 0.6px;
+  padding: 165px 50px 237px 50px;
+  position: relative;
+  color: #FFFFFF;
+
+}
+
+.line {
+  display: inline-block;
+  position: absolute;
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+
+.line__top {
+  top: 165px;
+  left: 50px;
+}
+
+.line__middle {
+  /*top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); сдвигает к центру от своей собственное ширины и высоты*/
+  top: 292px;
+  left: 336px;
+}
+
+.line__bot {
+  top: 412px;
+  left: 635px;
+}
+
+/*.letter.letter-spacing-extended {
+  letter-spacing: 20px;
+}*/
+
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+
+.top__letter {
+  position: absolute;
+  left: 240px;
+}
+
+.middle__letter {
+  position: absolute;
+  left: 309px;
+}
+
+.bot__letter {
+  position: absolute;
+  left: 135px;
+}
+
+
+.cover.overlay {
+  position: relative;
+  z-index: 0;
+}
+
+.overlay::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 
 
 
+.cover__description {
+  display: flex;
+  position: relative;
+}
 
+.cover__description-text {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  left: 78px;
+  bottom: 62px;
+  word-spacing: 20px;
+  position: absolute;
+  
+  
+}
 
+.bet-button {
+  width: 256px;
+  height: 51px;
+  border: 1px 0px 0px 0px;
+  border-color: white;
+  opacity: 0px;
+  background-color: transparent;
+  position: absolute;
+  right: 50px;
+  bottom: 51px;
+}
+
+.bet-button-text {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.83px;
+  text-align: center;
+}
 
 
 
