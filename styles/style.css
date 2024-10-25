@@ -17,8 +17,8 @@ h2 {
   grid-template-columns: 1fr auto 1fr;
   justify-items: center;
   align-items: center;
-  box-sizing: border-box; 
-  width: 100%; 
+  box-sizing: border-box;
+  width: 100%;
   padding: 94px 24px;
   line-height: 21.13px;
 }
