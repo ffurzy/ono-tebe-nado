@@ -44,8 +44,8 @@ h2 {
 
 .header__logo {
   display: block;
-  width: 148px;
-  height: 105px;
+  max-width: 148px;
+  height: auto;
 }
 
 .header__address {
