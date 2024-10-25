@@ -39,7 +39,7 @@ h2 {
 }
 
 .header__link_active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .header__logo {
