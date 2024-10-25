@@ -20,7 +20,6 @@ h2 {
   box-sizing: border-box;
   width: 100%;
   padding: 94px 24px;
-  line-height: 21.13px;
 }
 
 .header__links-list {
@@ -52,7 +51,6 @@ h2 {
   display: grid;
   margin-left: 125px;
   font-style: normal;
-  line-height: 24.3px;
   text-align: left;
 }
 
@@ -80,7 +78,6 @@ h2 {
   display: inline-block;
   font-weight: 700;
   font-size: 100px;
-  line-height: 115px;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
@@ -99,11 +96,11 @@ h2 {
   top: 412px;
   left: 635px;
 }
-
+/* кажется он не нужен?
 .no-letter-spacing {
-  letter-spacing: 0; /*и без этого работает?*/
+  letter-spacing: 0; 
 }
-
+*/
 .top__letter {
   position: absolute;
   left: 240px;
@@ -145,9 +142,8 @@ h2 {
   left: 78px;
   color: #fff;
   font-size: 22px;
-  line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 19px;
 }
 
 .bet-button {
@@ -165,7 +161,6 @@ h2 {
   color: #fff;
   font-weight: 500;
   font-size: 22px;
-  line-height: 25.83px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -178,7 +173,6 @@ h2 {
 
 .lots__heading {
   padding-left: 40px;
-  line-height: 46.96px;
 }
 
 .card_type_film {
@@ -241,7 +235,6 @@ h2 {
   color: #fff;
   font-weight: 700;
   font-size: 22px;
-  line-height: 26.4px;
   text-decoration-line: underline;
   text-transform: uppercase;
 }
@@ -250,7 +243,6 @@ h2 {
   display: flex;
   color: #fff;
   font-size: 20px;
-  line-height: 24px;
   text-decoration: none;
 }
 
@@ -261,7 +253,6 @@ h2 {
   padding-bottom: 146px;
   padding-left: 40px;
   font-size: 20px;
-  line-height: 23.48px;
   text-align: left;
   text-decoration: underline;
 }
@@ -324,12 +315,10 @@ h2 {
 .footer__adress {
   justify-self: flex-start;
   padding-left: 50px;
-  line-height: 24.3px;
   text-align: left;
 }
 
 .footer__menu {
-  line-height: 21.13px;
   text-align: center;
   padding: 0 50px 88px 50px;
 }
@@ -349,7 +338,7 @@ h2 {
 
 .footer__social-list-item {
   width: 48px;
-  height: 48px;
+  height: auto;
 }
 
 .footer__menu-list-item,
