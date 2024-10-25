@@ -99,11 +99,11 @@ h2 {
   top: 412px;
   left: 635px;
 }
-
+/* кажется он ничего не меняет
 .no-letter-spacing {
-  letter-spacing: 0; /*и без этого работает?*/
+  letter-spacing: 0;
 }
-
+*/
 .top__letter {
   position: absolute;
   left: 240px;
