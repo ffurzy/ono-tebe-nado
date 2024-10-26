@@ -56,12 +56,15 @@ h2 {
   height: 105px;
 }
 
+.address {
+  font-style: normal;
+  text-align: left;
+}
+
 .header__address {
   display: grid;
   margin-left: 125px;
-  font-style: normal;
   line-height: 24.3px;
-  text-align: left;
 }
 
 /*Контент*/
@@ -315,7 +318,6 @@ h2 {
   justify-self: flex-start;
   padding-left: 50px;
   line-height: 24.3px;
-  text-align: left;
 }
 
 .footer__menu {
