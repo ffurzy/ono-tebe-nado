@@ -1,6 +1,6 @@
 /*нашаманил пипец, жду миллион правок чтобы с нуля всё переделывать xd*/
 body {
-  font-family: "Raleway", sans-serif; /*а как понимать что с засечками или нет, просто загуглить?*/
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -59,23 +59,23 @@ h2 {
 /*Контент*/
 
 .cover {
+  min-height: 757px;
+  margin-bottom: 179px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 179px;
-  min-height: 757px;
 }
 
 .cover__title {
   position: relative;
-  min-height: 757px;
   z-index: 2;
-  padding: 165px 50px 230px 50px;
+  margin-bottom: 50px;
+  padding: 165px 50px 80px 50px;
   color: #fff;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 100px;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -89,93 +89,85 @@ h2 {
 
 .aligned-text_center {
   display: block;
-  text-align: center;
-  letter-spacing: 30px;
   margin-top: 10px;
+  letter-spacing: 30px;
+  text-align: center;
 }
 
 .aligned-text_right {
   display: block;
-  text-align: right;
   letter-spacing: 30px;
+  text-align: right;
 }
 
 .no-letter-spacing {
   letter-spacing: 0;
 }
 
+.cover.overlay {
+  /*наложение*/
+  position: relative;
+  z-index: 0;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .cover__description {
   position: relative;
   z-index: 2;
   display: flex;
-
-
-  padding: 0 50px 62px 78px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .cover__description-text {
+  left: 78px;
   display: block;
   margin-left: 78px;
-  left: 78px;
   color: #fff;
+  font-weight: 400;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 19px;
-  font-weight: 400;
-
 }
 
 .bet-button {
-  border: 1px solid #FFF;
+  box-sizing: border-box;
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
   border-color: #fff;
-  background-color: transparent;
   color: #fff;
   font-weight: 500;
   font-size: 22px;
   line-height: 25.83px;
   text-align: center;
   text-transform: uppercase;
-  width: 193px;
-  height: 28px;
-  top: 667px;
-  left: 825px;
-  gap: 0px;
-  opacity: 0px;
-
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
   padding-right: 24px;
+  padding-bottom: 145px;
   padding-left: 24px;
-  padding-bottom: 180px;
 }
 
 .lots__heading {
   padding-left: 40px;
   line-height: 46.96px;
-}
-
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.card_type_book {
-  background-image: url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.card_type_picture {
-  background-image: url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card {
@@ -185,6 +177,21 @@ h2 {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.card_type_book {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .card__content {
@@ -200,7 +207,7 @@ h2 {
 .lots__card-list-item {
   flex-grow: 1;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
 }
 
 .lots__card-list {
@@ -210,6 +217,7 @@ h2 {
   justify-content: space-between;
   gap: 25px;
   padding-top: 27px;
+  padding-bottom: 30px;
   list-style: none;
 }
 
@@ -232,7 +240,6 @@ h2 {
 
 .see__more {
   position: relative;
-  top: 30px;
   padding-top: 5px;
   padding-left: 40px;
   font-size: 20px;
@@ -258,13 +265,13 @@ h2 {
 
 .about__logo {
   display: flex;
+  grid-area: logo;
   justify-content: center;
   align-items: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background-color: #000;
-  grid-area: logo;
 }
 
 .about__logo-image {
@@ -304,9 +311,9 @@ h2 {
 }
 
 .footer__menu {
+  padding: 0 50px 88px 50px;
   line-height: 21.13px;
   text-align: center;
-  padding: 0 50px 88px 50px;
 }
 
 .footer__menu-link_active {
@@ -316,6 +323,7 @@ h2 {
 .footer__social-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /*при добавлении новых иконок они все добавляются под пинтерест столбиком, как это пофиксить?(для себя)*/
   justify-content: flex-end;
   gap: 48px;
   width: 100%;
