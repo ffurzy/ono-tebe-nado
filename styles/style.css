@@ -105,81 +105,18 @@ h2 {
 }
 
 
-
-/*
-.cover__title {
-  display: block;
-  position: relative;
-  z-index: 2;
-  padding: 165px 50px 230px 50px;
-  color: #fff;
-  min-height: 757px;
-}
-*/
-
-
-
-
-
-
-
-
-
-/*
-.cover__text {
-  display: flex;
-  font-weight: 700;
-  font-size: 100px;
-  letter-spacing: 30px;
-  text-transform: uppercase;
-}
-
-.aligned-text {
-  gap: 30px;
-}
-
-.aligned-text_center {
-  gap: 30px;
-  justify-content: center;
-  margin: 10px 27px 0 0;
-}
-
-.aligned-text_right {
-  gap: 30px;
-  margin-left: 585px;
-}
-*/
-/* кажется он ничего не меняет
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-*/
-/*
-.cover.overlay { 
-  position: relative;
-  z-index: 0;
-}
-*/
-
-/*
-.overlay::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-*/
 .cover__description {
   position: relative;
   z-index: 2;
   display: flex;
+
+
+  padding: 0 50px 62px 78px;
 }
 
 .cover__description-text {
-  position: absolute;
-  bottom: 62px;
+  display: block;
+  margin-left: 78px;
   left: 78px;
   color: #fff;
   font-size: 22px;
@@ -187,15 +124,11 @@ h2 {
   text-transform: uppercase;
   word-spacing: 19px;
   font-weight: 400;
+
 }
 
 .bet-button {
-  position: absolute;
-  right: 50px;
-  bottom: 51px;
-  width: 256px;
-  height: 51px;
-  border: 1px 0 0 0;
+  border: 1px solid #FFF;
   border-color: #fff;
   background-color: transparent;
   color: #fff;
@@ -204,6 +137,13 @@ h2 {
   line-height: 25.83px;
   text-align: center;
   text-transform: uppercase;
+  width: 193px;
+  height: 28px;
+  top: 667px;
+  left: 825px;
+  gap: 0px;
+  opacity: 0px;
+
 }
 
 .lots {
